@@ -1,6 +1,6 @@
 baseURL: "https://AXONAI9000.github.io/ShareLine/"
 languageCode: zh-cn
-title: "技术博客 | ShareLine"
+title: "技术博客 | AXONAI9000"
 theme: PaperMod
 
 # 启用 emoji 支持
@@ -102,11 +102,11 @@ params:
     hiddenInList: false
     hiddenInSingle: false
 
-  # 编辑建议
-  editPost:
-    URL: "https://github.com/AXONAI9000/ShareLine/tree/main/content"
-    Text: "建议修改"
-    appendFilePath: true
+  # # 编辑建议
+  # editPost:
+  #   URL: "https://github.com/AXONAI9000/ShareLine/tree/main/content"
+  #   Text: "建议修改"
+  #   appendFilePath: true
 
   # 搜索配置
   fuseOpts:
