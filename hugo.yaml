@@ -1,4 +1,4 @@
-baseURL: "https://你的用户名.github.io/ShareLine/"
+baseURL: "https://AXONAI9000.github.io/ShareLine/"
 languageCode: zh-cn
 title: "技术博客 | ShareLine"
 theme: PaperMod
@@ -50,7 +50,7 @@ params:
   env: production
   title: "技术博客 | ShareLine"
   description: "分享 AI、编程、技术思考"
-  author: "你的名字"
+  author: "AXONAI9000"
 
   # 首页信息
   homeInfoParams:
@@ -64,9 +64,9 @@ params:
   # 社交链接
   socialIcons:
     - name: github
-      url: "https://github.com/你的用户名"
+      url: "https://github.com/AXONAI9000"
     - name: email
-      url: "mailto:your-email@example.com"
+      url: "AXONAI9000@outlook.com"
     - name: rss
       url: "/index.xml"
 
@@ -104,7 +104,7 @@ params:
 
   # 编辑建议
   editPost:
-    URL: "https://github.com/你的用户名/ShareLine/tree/main/content"
+    URL: "https://github.com/AXONAI9000/ShareLine/tree/main/content"
     Text: "建议修改"
     appendFilePath: true
 
