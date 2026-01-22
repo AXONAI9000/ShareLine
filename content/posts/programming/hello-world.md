@@ -1,0 +1,58 @@
+---
+title: "Hello World - 我的第一篇博客"
+date: 2026-01-22
+draft: false
+description: "欢迎来到我的技术博客，这是我的第一篇文章。"
+tags: ["博客", "Hugo"]
+categories: ["programming"]
+ShowToc: true
+TocOpen: true
+---
+
+## 前言
+
+欢迎来到我的技术博客！这是使用 Hugo + PaperMod 搭建的第一篇文章。
+
+## 为什么写博客
+
+- 记录学习过程和技术积累
+- 分享知识，帮助他人
+- 整理思路，加深理解
+- 建立个人品牌
+
+## 博客技术栈
+
+本博客使用以下技术搭建：
+
+- **Hugo**: 静态网站生成器，构建速度极快
+- **PaperMod**: 简洁专业的 Hugo 主题
+- **GitHub Pages**: 免费的静态网站托管
+- **GitHub Actions**: 自动化构建和部署
+
+## 代码示例
+
+```python
+def hello_world():
+    print("Hello, World!")
+    print("欢迎来到我的博客！")
+
+if __name__ == "__main__":
+    hello_world()
+```
+
+## 未来计划
+
+我计划在这个博客上分享：
+
+1. AI 和机器学习相关内容
+2. 编程技巧和最佳实践
+3. 项目经验和技术选型
+4. 读书笔记和学习心得
+
+## 总结
+
+感谢你的阅读！如果你对我的内容感兴趣，欢迎关注我的博客。
+
+---
+
+> 如果你有任何问题或建议，欢迎通过 [关于页面](/about/) 中的联系方式与我交流。

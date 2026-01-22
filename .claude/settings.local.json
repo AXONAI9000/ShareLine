@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(dir:*)",
+      "Bash(winget install:*)",
+      "Bash(powershell.exe -Command \"winget install Hugo.Hugo.Extended --accept-package-agreements --accept-source-agreements\")",
+      "Bash(powershell.exe -Command \"choco --version\")",
+      "Bash(powershell.exe -Command \"scoop --version\")",
+      "Bash(powershell.exe -Command:*)",
+      "Bash(C:/Hugo/hugo.exe version:*)",
+      "Bash(git init:*)",
+      "Bash(git submodule add:*)",
+      "Bash(C:/Hugo/hugo.exe server:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

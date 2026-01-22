@@ -1,0 +1,149 @@
+baseURL: "https://你的用户名.github.io/ShareLine/"
+languageCode: zh-cn
+title: "技术博客 | ShareLine"
+theme: PaperMod
+
+# 启用 emoji 支持
+enableEmoji: true
+
+# 启用 Git 信息
+enableGitInfo: true
+
+# 分页设置
+pagination:
+  pagerSize: 10
+
+# 构建设置
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # 用于搜索功能
+
+# 菜单配置
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: 项目
+      url: /projects/
+      weight: 20
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+
+# PaperMod 主题配置
+params:
+  env: production
+  title: "技术博客 | ShareLine"
+  description: "分享 AI、编程、技术思考"
+  author: "你的名字"
+
+  # 首页信息
+  homeInfoParams:
+    Title: "欢迎来到我的技术博客 👋"
+    Content: >
+      这里记录我在 AI、编程和技术探索中的思考与实践。
+
+
+      主要关注：人工智能、Web 开发、系统架构、开源项目
+
+  # 社交链接
+  socialIcons:
+    - name: github
+      url: "https://github.com/你的用户名"
+    - name: email
+      url: "mailto:your-email@example.com"
+    - name: rss
+      url: "/index.xml"
+
+  # 功能开关
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  # 资源配置
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  # 封面图配置
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  # 编辑建议
+  editPost:
+    URL: "https://github.com/你的用户名/ShareLine/tree/main/content"
+    Text: "建议修改"
+    appendFilePath: true
+
+  # 搜索配置
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# 代码高亮配置
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true  # 允许 HTML 标签
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+# 隐私设置
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+
+# 分类法配置
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
