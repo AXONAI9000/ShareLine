@@ -1,80 +1,129 @@
-# ShareLine 技术博客
+# ShareLine - Hugo 技术博客模板
 
-基于 Hugo + PaperMod + GitHub Pages 的技术博客。
+一个开箱即用的技术博客模板，基于 Hugo + PaperMod + GitHub Pages，专为技术写作者设计。
 
-## 快速开始
+## ✨ 特性
 
-### 1. 安装 Hugo
+- 🚀 零配置部署到 GitHub Pages
+- 📝 Markdown 写作，专注内容
+- 🔍 内置全文搜索
+- 🌙 自动深色模式
+- 📱 响应式设计，移动端友好
+- ⚡ 极速加载，SEO 优化
+- 🏷️ 支持分类、标签、系列文章
+
+## 🚀 快速开始
+
+### 1. 使用此模板
+
+点击 GitHub 页面右上角的 **Use this template** 按钮，创建你自己的仓库。
+
+### 2. 克隆到本地
 
 ```bash
+git clone --recursive https://github.com/你的用户名/你的仓库名.git
+cd 你的仓库名
+```
+
+> `--recursive` 会同时拉取 PaperMod 主题子模块
+
+### 3. 修改配置
+
+编辑 `hugo.yaml`，替换以下内容：
+
+```yaml
+baseURL: "https://你的用户名.github.io/你的仓库名/"
+params:
+  author: "你的名字"
+  socialIcons:
+    - name: github
+      url: "https://github.com/你的用户名"
+```
+
+### 4. 本地预览
+
+```bash
+# 安装 Hugo (Windows)
 winget install Hugo.Hugo.Extended
-```
 
-### 2. 添加 PaperMod 主题
-
-```bash
-git init
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-```
-
-### 3. 本地预览
-
-```bash
+# 启动本地服务器
 hugo server -D
 ```
 
 访问 http://localhost:1313 查看效果。
 
-### 4. 创建新文章
+### 5. 部署
 
-双击 `new-post.bat`，按提示输入标题和分类。
+1. 进入 GitHub 仓库 → Settings → Pages
+2. Source 选择 **GitHub Actions**
+3. 推送代码后自动部署
 
-### 5. 发布博客
-
-双击 `publish.bat`，自动提交并推送到 GitHub。
-
-## 目录结构
+## 📁 目录结构
 
 ```
-ShareLine/
-├── .github/workflows/deploy.yml    # 自动部署配置
-├── archetypes/default.md           # 文章模板
 ├── content/
-│   ├── posts/
-│   │   ├── ai/                     # AI相关文章
-│   │   └── programming/            # 编程相关文章
-│   ├── about.md                    # 关于我
-│   ├── projects.md                 # 项目展示
-│   └── search.md                   # 搜索页面
-├── static/images/                  # 图片资源
-├── themes/PaperMod/                # 主题(git submodule)
-├── hugo.yaml                       # 站点配置
-├── new-post.bat                    # 快速创建文章
-└── publish.bat                     # 一键发布
+│   ├── posts/           # 文章目录
+│   │   ├── ai/          # AI 分类
+│   │   └── programming/ # 编程分类
+│   ├── about.md         # 关于页面
+│   ├── projects.md      # 项目展示
+│   └── search.md        # 搜索页面
+├── static/images/       # 图片资源
+├── hugo.yaml            # 站点配置
+├── new-post.bat         # 快速创建文章 (Windows)
+└── publish.bat          # 一键发布 (Windows)
 ```
 
-## 配置说明
+## ✍️ 写作
 
-编辑 `hugo.yaml` 文件，修改以下内容：
+### 创建新文章
 
-1. `baseURL`: 改为你的 GitHub Pages 地址
-2. `params.author`: 改为你的名字
-3. `params.socialIcons`: 添加你的社交链接
-4. `params.editPost.URL`: 改为你的仓库地址
+**方式一：使用脚本 (Windows)**
+```bash
+双击 new-post.bat
+```
 
-## GitHub 设置
+**方式二：手动创建**
+```bash
+hugo new posts/programming/my-post.md
+```
 
-1. 创建 GitHub 仓库
-2. 在仓库 Settings > Pages 中，选择 "GitHub Actions" 作为 Source
-3. 推送代码后，GitHub Actions 会自动构建和部署
+### 文章模板
 
-## 日常使用
+```markdown
+---
+title: "文章标题"
+date: 2024-01-01
+draft: false
+tags: ["标签1", "标签2"]
+categories: ["分类"]
+summary: "文章摘要"
+---
 
-1. **创建文章**: 双击 `new-post.bat`
-2. **编辑文章**: 用 VS Code 或其他编辑器编辑 Markdown 文件
-3. **本地预览**: 运行 `hugo server -D`
-4. **发布**: 双击 `publish.bat`
+正文内容...
+```
 
-## License
+## 🎨 自定义
+
+### 添加新分类
+
+1. 在 `content/posts/` 下创建新文件夹
+2. 创建 `_index.md` 文件（可选，用于分类描述）
+
+### 修改首页内容
+
+编辑 `hugo.yaml` 中的 `homeInfoParams`：
+
+```yaml
+homeInfoParams:
+  Title: "你的欢迎语"
+  Content: "博客简介"
+```
+
+### 添加社交链接
+
+支持的图标：github, twitter, linkedin, email, rss 等，完整列表见 [PaperMod 文档](https://github.com/adityatelange/hugo-PaperMod/wiki/Icons)
+
+## 📄 License
 
 MIT

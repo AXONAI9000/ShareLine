@@ -3,7 +3,7 @@ title: "Hello World - 我的第一篇博客"
 date: 2026-01-22
 draft: false
 description: "欢迎来到我的技术博客，这是我的第一篇文章。"
-tags: ["博客", "Hugo"]
+tags: ["博客"]
 categories: ["programming"]
 ShowToc: true
 TocOpen: true
@@ -18,7 +18,6 @@ TocOpen: true
 - 记录学习过程和技术积累
 - 分享知识，帮助他人
 - 整理思路，加深理解
-- 建立个人品牌
 
 ## 博客技术栈
 
@@ -29,16 +28,6 @@ TocOpen: true
 - **GitHub Pages**: 免费的静态网站托管
 - **GitHub Actions**: 自动化构建和部署
 
-## 代码示例
-
-```python
-def hello_world():
-    print("Hello, World!")
-    print("欢迎来到我的博客！")
-
-if __name__ == "__main__":
-    hello_world()
-```
 
 ## 未来计划
 
